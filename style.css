@@ -79,7 +79,17 @@ body{
     color:white;
     padding:10px;
     border-radius: 30px;
+    cursor: pointer;
+    border: solid blueviolet 1px;
 }
+
+.catagories p:hover{
+    background-color: transparent;
+    color: black;
+    transition: 2s;
+    border: solid blueviolet 1px;
+}
+
 .sale-image img{
     width:100%;
 }
@@ -97,6 +107,21 @@ body{
     top: 30%;
     left: 10%;
     border-radius: 30px;
+    animation-name: zoom;
+    animation-duration: 2s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: svale(1);
+        opacity: 1;
+    }
 }
 .recomended{
     padding:20px;
